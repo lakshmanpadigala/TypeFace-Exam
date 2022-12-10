@@ -38,6 +38,10 @@ int main() {
             cin>>image[i][j];
         }
     }
+    
+    //idea is to do the dfs traversal in all 8 directions in the image and for a white object find the four variables
+    // min row number, max row number and min column number , max column number
+    // using these four variables, we can find height, width and midX,midY
     vector<vector<int>> vis(m,vector<int>(n,0));
     for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
